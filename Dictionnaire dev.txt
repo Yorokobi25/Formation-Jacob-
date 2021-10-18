@@ -1,0 +1,5 @@
+Faire une boucle: for
+Faire une variable: let
+if: si
+else: sinon
+|| = ou

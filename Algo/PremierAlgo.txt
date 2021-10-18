@@ -1,0 +1,21 @@
+Algorithme - Cuisson pates
+Permet au robot de cuire des pâtes et de les égouter
+
+VARIABLE
+quantite_pates = 1kg
+quantite_sel = 5g
+point_ebulition = 100°C
+
+DEBUT
+prendre la casserole
+mettre de l'eau dans la casserole jusqu'à se qu'elle soit plein
+allumer le feu de cuisson (fort)
+mettre la casserole sur le feu
+verser quantite_sel de sel dans la casserole
+attendre que l'eau soit à la température point_ebulition
+rajouter quantite_pates de pâtes dans la casserole
+Attendre 8min
+éteindre le feu
+mettre la passoire dans l'évier
+verser le contenue de la casserole dans une passoire
+FIN
