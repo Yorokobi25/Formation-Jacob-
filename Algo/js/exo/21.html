@@ -11,6 +11,18 @@
     de la même façon dans les deux sens)
     <script>
         let phrase = prompt("entrez une phrase");
+        let inverse = "";
+        for (let i = phrase.length - 1; i >= 0; i--) {
+            inverse = inverse + phrase[i];
+        }
+        if (phrase == inverse) {
+            console.log(true)
+        } else {
+            console.log(false)
+        }
+
+
+
     </script>
 </body>
 
