@@ -48,3 +48,52 @@ nav ul li a:hover {
     color: white;
     background-color: #0052ce;
 }
+
+  div {
+    text-align:end;
+    margin-right: 150px;
+  }
+
+  .button-viewDemo {    
+    margin-left: 60px;
+    font-weight: 700;
+    background-color: #0061F2;
+    color:  white;
+    padding: 20px 35px;
+    border-radius: 0.35rem;
+    position: relative;
+    top: 300px;
+    right: 65px;
+  }
+
+  .button-viewDemo:hover {
+    color: white;
+    background-color: #0052ce;
+  }
+
+  .button-documentation {    
+    margin-left: 60px;
+    font-weight: 600;
+    background-color: #dae7fb;
+    color: #0061f2;
+    padding: 20px 35px;
+    border-radius: 0.35rem;
+    position: relative;
+    top: 300px;
+    right: 120px;
+  }
+
+  .button-documentation:hover {
+    color: #0061F2;
+    background-color: #dae7fbe7;
+  }
+
+  .content {
+    font-weight: 900;
+    color: rgba(170, 5, 5, 0.514);
+    position: relative;
+    top: 100px;
+    right: 650px;
+}
+
+  
