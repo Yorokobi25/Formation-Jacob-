@@ -1,12 +1,17 @@
+@font-face {
+  font-family: "Metropolis";
+  src: url("metropolis.regular.otf") format("opentype");
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Metropolis", Arial, Helvetica, sans-serif;
 }
 
 nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 70%;
     height: 80px;
     align-items: center;
 }
@@ -37,7 +42,7 @@ nav ul li a:hover {
 
 .button-buy {
     margin-left: 60px;
-    font-weight: 600;
+    font-weight: 500;
     background-color: #0061F2;
     color:  white;
     padding: 15px 30px;
@@ -49,21 +54,17 @@ nav ul li a:hover {
     background-color: #0052ce;
 }
 
-  div {
-    text-align:end;
-    margin-right: 150px;
-  }
 
   .button-viewDemo {    
-    margin-left: 60px;
-    font-weight: 700;
+    font-weight: 500;
+    height: 35px;
+    width: 150px;
     background-color: #0061F2;
     color:  white;
-    padding: 20px 35px;
+    padding: 18px 33px;
     border-radius: 0.35rem;
-    position: relative;
-    top: 300px;
-    right: 65px;
+    text-decoration: none;
+    margin-right: 13px;
   }
 
   .button-viewDemo:hover {
@@ -72,15 +73,14 @@ nav ul li a:hover {
   }
 
   .button-documentation {    
-    margin-left: 60px;
-    font-weight: 600;
+    font-weight: 500;
+    height: 35px;
+    width: 150px;
     background-color: #dae7fb;
     color: #0061f2;
-    padding: 20px 35px;
+    padding: 18px 33px;
     border-radius: 0.35rem;
-    position: relative;
-    top: 300px;
-    right: 120px;
+    text-decoration: none;
   }
 
   .button-documentation:hover {
@@ -88,12 +88,41 @@ nav ul li a:hover {
     background-color: #dae7fbe7;
   }
 
-  .content {
-    font-weight: 900;
-    color: rgba(170, 5, 5, 0.514);
-    position: relative;
-    top: 100px;
-    right: 650px;
-}
+  .banner {
+    margin: 0 auto;
+    width: 73%;
+    display: flex;
+    align-items: center;
+  }
 
+  .banner-image, .banner-text {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+
+  .banner-text h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #363d47;
+    /* si on désire préciser toutes les marges d'un élément en une ligne o peut utliser cette syntaxe qui permet de définir les 4 marges dans le sens des aiguilles d'une montre en partant d'en haut
+    Toutes nos marges passe à 0 sauf celle du bas qui vaut 8px*/
+    margin: 0 0 8px 0;
+  }
+
+  .banner-text p {
+    font-size: 1.15rem;
+    color: #69707a;
+  }
   
+  /*
+  nth-child permet de selectionner le n-ème enfant d'un certain type dans un selecteur scc
+  Ici ce selecteur signifie "je veux la premiere div directement enfant d'un élément avec la classe banner-texte"
+  */
+  .banner-text > div:nth-child(1) {
+    margin-bottom: 40px;
+  }
+
+  header {
+    margin-bottom: 100px;
+  }

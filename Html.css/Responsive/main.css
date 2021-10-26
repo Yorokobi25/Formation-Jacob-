@@ -1,0 +1,33 @@
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.block {
+    font-size: 2em;
+    width: 150px;
+    height: 200px;
+    background-color: burlywood;
+    border: 1px solid black;
+}
+.optional-image {
+    display: none;
+}
+
+@media screen and (min-width: 468px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .optional-image {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+}
