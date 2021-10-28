@@ -1,0 +1,59 @@
+.block {
+    height: 150px;
+    width: 150px;
+    background-color: brown;
+    color: white;
+    margin: 50px 0;
+    font-size: 5em;
+}
+
+.block1 {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.block1:hover {
+    background-color: white;
+    color: brown;
+}
+
+.block2 {
+    transition: transform 0.3s;
+}
+.block2:hover {
+    transform: rotate(45deg);
+}
+
+.block3 {
+    animation: rotation 1s infinite;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.block4 {
+    margin-left: 200px;
+    animation: rebound 1s infinite alternate;
+}
+
+@keyframes rebound {
+    0% {
+        transform: translateY(0);
+    }
+
+    33% {
+        transform: translateY(0);
+    }
+
+    90% {
+        transform: translateY(-200px);
+    }
+
+    100% {
+        transform: translateY(-200px)
+    }
+}
